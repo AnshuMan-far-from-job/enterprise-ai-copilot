@@ -20,8 +20,7 @@ class GeminiProvider:
         response = self.model.generate_content(prompt)
 
         print("✅ Gemini finished")
-
+        print("AI Response:")
+        print(response.text)
         return response.text
-
-
 gemini_provider = GeminiProvider()
